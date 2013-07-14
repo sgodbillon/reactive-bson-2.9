@@ -1,10 +1,8 @@
-ReactiveMongo: a reactive, non-blocking, Scala Driver for MongoDB
+ReactiveMongo-BSON: a type safe BSON library for Scala
 
-  Non-blocking, Reactive MongoDB Driver for Scala
+  A type safe BSON library for Scala. It has no dependencies on anything but Scala (including ReactiveMongo).
 
-Copyright 2012-2013 Stephane Godbillon (@sgodbillon) and contributors.
-
-Please read each subproject's NOTICE.txt file for more specific information.
+Copyright 2013 Stephane Godbillon (@sgodbillon)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

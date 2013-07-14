@@ -1,7 +1,21 @@
-scalaVersion := "2.10.0"
+organization := "org.reactivemongo"
 
-// scalacOptions ++= Seq("-Xlog-implicits")
+name := "ReactiveMongo-BSON"
 
-scalacOptions in (Compile, doc) ++= Opts.doc.title("ReactiveMongo API")
+version := "0.9"
 
-scalacOptions in (Compile, doc) ++= Opts.doc.version("0.9-SNAPSHOT")
+scalaVersion := "2.9.3"
+
+//scalacOptions ++= Seq("-unchecked", "-deprecation", "-Xlog-implicits", "-Yinfer-debug")
+
+// scalacOptions ++= Seq("-unchecked", "-deprecation", "-Xlog-implicits", "-Yinfer-debug", "-Xprint:typer")
+
+scalacOptions ++= Seq("-unchecked", "-deprecation")
+
+resolvers ++= Seq("releases"  at "http://oss.sonatype.org/content/repositories/releases")
+
+libraryDependencies += "org.specs2" %% "specs2" % "1.12.4.1" % "test"
+
+scalacOptions in (Compile, doc) ++= Opts.doc.title("ReactiveMongo-BSON API")
+
+scalacOptions in (Compile, doc) ++= Opts.doc.version("0.1-SNAPSHOT")
